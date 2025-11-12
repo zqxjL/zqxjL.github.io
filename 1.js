@@ -1,5 +1,6 @@
 function exploit() {
-    var result = alert(localStorage.token);
+    var test = "test";
+    alert(localStorage.token);
 }
 
 exploit()
